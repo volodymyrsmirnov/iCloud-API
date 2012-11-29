@@ -150,6 +150,9 @@ class iCloud():
 			"Cookie": self.__prepare_cookies()
 		}, body = callPayload)
 
+		if "set-cookie" in resp:
+			self.__update_cookies(resp["set-cookie"])
+
 		if resp.status != 200:
 			raise iCloudException(request + " did not suceed")
 

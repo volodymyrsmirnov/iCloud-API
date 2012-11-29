@@ -1,12 +1,13 @@
 # iClould API Implementation
 # Based on https://www.icloud.com requests
 # Made by Vladimir Smirnov (vladimir@smirnov.im)
-#
+# http://www.mindcollapse.com/
+
 # WARNING! 
 # This code could be used for educational purposes only.
 # I.e. you should not use this code in any testing or production environments,
 # otherwise you may violate Apple iCloud Terms and Condition and the Exodus 20:15 "Thou shalt not steal".
-# The author is not responsible for any violation of this simple and clear rules. Peace!
+# The author is not responsible for any violation of this simple and clear rules. 
 
 # Depends on http://pypi.python.org/pypi/httplib2
 import httplib2

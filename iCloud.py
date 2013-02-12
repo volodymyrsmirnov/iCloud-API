@@ -15,7 +15,7 @@ import httplib2
 import json, uuid, hashlib, sys
 
 # Available both for Python 2.x and 3.x (tested on 2.7, 2.6 and 3.3)
-if sys.version_info => (3,0,0): from http.cookies import SimpleCookie
+if sys.version_info >= (3,0,0): from http.cookies import SimpleCookie
 else: from Cookie import SimpleCookie
 
 class iCloudException(Exception):

@@ -235,7 +235,7 @@ class iCloud():
 	def __init__(self, login, password):
 		self.http = httplib2.Http()
 
-		self.clientBuildNumber = jdata["1P24"]
+		self.clientBuildNumber = "1P24"
 		self.clientId = str(uuid.uuid1()).upper()
 
 		self.login = login

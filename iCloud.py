@@ -234,17 +234,8 @@ class iCloud():
 	# Get buildNuber and generate clientID
 	def __init__(self, login, password):
 		self.http = httplib2.Http()
-		resp, data = self.http.request(self.urls["version"], "GET")
 
-		if resp.status != 200: 
-			raise iCloudException("error while getting build number")
-
-		jdata = json.loads(data.decode('utf-8'))
-
-		if "buildNumber" not in jdata:
-			raise iCloudException("wrong version file format")
-
-		self.clientBuildNumber = jdata["buildNumber"]
+		self.clientBuildNumber = jdata["1P24"]
 		self.clientId = str(uuid.uuid1()).upper()
 
 		self.login = login

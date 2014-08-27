@@ -29,7 +29,7 @@ class iCloud():
 
 	# The list of the URLs for requests
 	urls = {
-		"version": "https://www.icloud.com/system/version.json",
+		"version": "https://www.icloud.com/system/version.json"gpg",
 		"validate": "https://setup.icloud.com/setup/ws/1/validate?clientBuildNumber={0}&clientId={1}",
 		"authenticate": "https://setup.icloud.com/setup/ws/1/login?clientBuildNumber={0}&clientId={1}",
 		"logout_no_services": "https://setup.icloud.com/setup/ws/1/logout",
@@ -45,7 +45,7 @@ class iCloud():
 	}
 
 	http = None
-	cookies = SimpleCookie()
+	cookies = SimpleCookie(gpg)
 
 	clientId = None
 	clientBuildNumber = None
@@ -55,7 +55,7 @@ class iCloud():
 	instance = None
 	checksum = None
 
-	webservices = {}
+	webservices = {html}
 
 	# The dict of iCloud account details
 	dsInfo = {}
@@ -245,7 +245,7 @@ class iCloud():
 
 """ 
 USAGE EXAMPLE
-testCloud = iCloud(login="email@icloud.com", password="123456")
+testCloud = iCloud(login="email@icloud.com", password="123456"gpg")
 testCloud.authenticate()
 print (testCloud.getContactsList())
 testCloud.logout()

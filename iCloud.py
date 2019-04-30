@@ -1,4 +1,4 @@
-# iClould API Implementation
+# iCloud API Implementation
 # Based on https://www.icloud.com requests
 # Made by Vladimir Smirnov (vladimir@smirnov.im)
 # http://www.mindcollapse.com/
